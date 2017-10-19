@@ -1,0 +1,20 @@
+/* #Rehylo
+$[
+	1.063,
+	["SelectionScreen",[[0,0,1,1],0.025,0.04,"GUI_GRID"],0,0,0],
+	[-1200,"END_BACKGROUND",[1,"end_background.paa",["-0.0310938 * safezoneW + safezoneX","-0.38 * safezoneH + safezoneY","1.03125 * safezoneW","1.771 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1201,"BKG_selectors",[1,"selector_background.paa",["0.17 * safezoneW + safezoneX","-0.116 * safezoneH + safezoneY","0.680625 * safezoneW","1.232 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1211,"3D_view_police",[1,"#(argb,8,8,3)color(1,1,1,0.5)",["0.183437 * safezoneW + safezoneX","0.227222 * safezoneH + safezoneY","0.179844 * safezoneW","0.545667 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1212,"3DView_civilian",[1,"#(argb,8,8,3)color(1,1,1,0.5)",["0.420625 * safezoneW + safezoneX","0.228889 * safezoneH + safezoneY","0.179844 * safezoneW","0.545667 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1213,"3DView_medical",[1,"#(argb,8,8,3)color(1,1,1,0.5)",["0.658125 * safezoneW + safezoneX","0.227777 * safezoneH + safezoneY","0.179844 * safezoneW","0.545667 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1202,"OUTLINE_POLICE",[1,"selector_outline.paa",["0.121094 * safezoneW + safezoneX","0.225 * safezoneH + safezoneY","0.304219 * safezoneW","0.55 * safezoneH"],[0.506,0.831,0.98,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1203,"OUTLINE_CIVILIAN",[1,"selector_outline.paa",["0.35875 * safezoneW + safezoneX","0.224445 * safezoneH + safezoneY","0.304219 * safezoneW","0.55 * safezoneH"],[0.494,0.341,0.761,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1204,"OUTLINE_MEDICAL",[1,"selector_outline.paa",["0.595625 * safezoneW + safezoneX","0.226666 * safezoneH + safezoneY","0.304219 * safezoneW","0.55 * safezoneH"],[0,0.784,0.325,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1205,"BTN_POLICE",[1,"button_background.paa",["0.183594 * safezoneW + safezoneX","0.546111 * safezoneH + safezoneY","0.179219 * safezoneW","0.350889 * safezoneH"],[0.506,0.831,0.98,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1206,"BTN_CIVILIAN",[1,"button_background.paa",["0.42125 * safezoneW + safezoneX","0.546667 * safezoneH + safezoneY","0.179219 * safezoneW","0.350889 * safezoneH"],[0.494,0.341,0.761,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1207,"BTN_MEDICAL",[1,"button_background.paa",["0.658125 * safezoneW + safezoneX","0.546667 * safezoneH + safezoneY","0.179219 * safezoneW","0.350889 * safezoneH"],[0,0.784,0.325,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1208,"rtext_POLICE",[1,"POLICE_text.paa",["0.226719 * safezoneW + safezoneX","0.632 * safezoneH + safezoneY","0.0928125 * safezoneW","0.176 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1209,"rtext_civilian",[1,"JOIN CIVILIAN text.paa",["0.461406 * safezoneW + safezoneX","0.641889 * safezoneH + safezoneY","0.103125 * safezoneW","0.165 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1210,"rtext_medical",[1,"JOIN MEDICAL text.paa",["0.703125 * safezoneW + safezoneX","0.634444 * safezoneH + safezoneY","0.0928125 * safezoneW","0.176 * safezoneH"],[1,1,1,1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]]
+]
+*/

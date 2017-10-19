@@ -1,0 +1,29 @@
+Starting up systems.
+All Ava Assistant Grid Systems working. Welcome back!
+BOOT UP CANCELED. Out of grid. Goodbye!
+DANGER! LIGHT WOUNDS
+DANGER! SEVERE WOUNDS
+DANGER! HEAVY VEHICLE DAMAGE
+WARNING! LIGHT VEHICLE DAMAGE
+WARNING! Disabling crime prevention interface. You may be questioned by authorities.
+WARNING! Crime rating being scanned.
+WARNING! Crime rating is public.
+WARNING! Entering a secured area.
+WARNING! Carrying weapons in a secured area.
+WARNING! You are entering a police forces facility.
+WARNING! Police patrol nearby.
+WARNING! Threat detected.
+WARNING! Police checkpoint nearby.
+WARNING! Crime rating increased.
+DANGER! Police forces have been notified of your position.
+E M S notified.
+9 1 1 notified.
+INFO! You are leaving the Ava Assistant GRID.
+You have left the Ava Assistant Grid. Shuting down.
+Scanning surroundings...
+No targets identified.
+ALERT! You have died here less than 15 minutes ago. This event has been recored and notified to the Game Masters. Prepare your excuses.
+ALERT! You have recieved a message from a Game Master.
+ALERT! You are required by a Game Master, please reply.
+WARNING! Translocating to a Game Master's position.
+Hello dear Cheater. We have found you. Enjoy your ban! LOVE, Di'Vaa
