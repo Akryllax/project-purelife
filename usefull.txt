@@ -1,0 +1,69 @@
+/
+/DISPLAY HIDDING STUFF
+
+(findDisplay 129) closeDisplay 2;	//close tasks if opened
+(findDisplay 602) closeDisplay 2;	//close inventory if opened
+_m = openmap [false, false];		//close map if opened
+showCompass false;			//disallow other elements
+showGPS false;
+showRadio false;
+showWatch false;
+showPad false;
+[false] call bis_fnc_showUnitInfo;	//weapon info may overlap
+
+
+/*
+	File: fn_inv.sqf
+	Author: Vilem
+
+	Description:
+	Returns inventory contents of given vehicle (unit).
+	
+	Note: for vehicles it returns mounted gun and its ammo, not cargo weapons and ammo.
+
+	Parameter(s):
+	1: <object> vehicle or unit 
+	
+	Returns:
+	<array> weapons and magazines
+*/
+
+/*
+	File: fn_invAdd.sqf
+	Author: Vilem
+
+	Description:
+	Adds item to inventory - checks if there is room for it. Checks if add was done by engine.
+
+	Parameter(s):
+	1: <object> unit
+	2: <string | config class> inventory item (weapon | magazine | other item) - name or class
+
+	Returns:
+	<bool> true if successfully added to inventory
+	or
+	when forcing add - <array> list of removed items (TODO: indicate fail to add)
+*/
+
+/*
+	File: fn_invSlots.sqf
+	Author: Vilem
+
+	Description:
+	Returns config inventory slots of given unit (total numbers of available slots in array).
+	
+	Parameter(s):
+	1: <object> unit 
+	
+	Returns:
+	<array> array with total available slots of all types that are given by config
+	
+	
+	Function:
+	 input: [player] call BIS_fnc_invSlotsEmpty;
+	 partial result - from config (class "USMC_rifleman"):	weaponSlots = "1  +  4  + 12*  256  + 2* 4096  +  2  + 8* 16  + 12*131072"
+	 output: [1,1,1,8,12,2,0,12]
+	  - means: 1 x WeaponSlotPrimary, 1 x WeaponSlotHangun, ... , 12 x WeaponSlotInventory
+
+*/
+

@@ -1,0 +1,2 @@
+diag_log "SERVER INITIALIZING";
+

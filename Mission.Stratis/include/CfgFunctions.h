@@ -23,12 +23,15 @@ class CfgFunctions
 		};
 
 		class Avatars {
-			file = "core\Player";
-			class createAvatar {};
-			class destroyAvatar {};
+			file = "core\Avatar";
 			class initializeAvatar {};
-			class initPlayerSystems {};
-			class transferAvatar {};
+			class isAvatar {};
+			class onAvatarKilled {};
+			class requestCustomizeAvatar {};
+			class requestDestroyAllMyAvatars {};
+			class requestDestroyAvatar {};
+			class requestNewAvatar {};
+			class requestTransferAvatar {};
 		};
 
 		class Data {
@@ -36,10 +39,21 @@ class CfgFunctions
 			class loadUserdata {};
 			class requestUserData {};
 		};
+
+		class EventHandlers_Display {
+			file = "core\EventHandlers\Display";
+			class addDisplayEH {};
+			class asyncKeydown {};
+			class initInputEH { postInit = 1; };
+			class onKeyDown {};
+			class removeDisplayEH {};
+		};
 		
-		class EntityEventHandlers {
+		class EventHandlers_Entity {
 			file = "core\EventHandlers\Entity";
 			class addEntityEH;
+			class onAvatarKilled {};
+			class onAvatarTransfered {};
 			class onPlayerEnterVehicle {};
 			class onPlayerExitVehicle {};
 			class onPlayerKilled {};
@@ -48,16 +62,27 @@ class CfgFunctions
 
 		class Interface {
 			file = "core\Interface";
-			class initInterface {};
 			class addHUDEventHandlers {};
+			class addOverlay {};
+			class closeDialog {};
+			class initInterface {};
+			class openDialog {};
+			class releaseUISpace {};
+			class removeOverlay {};
+			class reserveUISpace {};
 			class resetInterface {};
 		};
 
-		class KeyboardEventHandlers {
-			file = "core\EventHandlers\Keyboard";
-			class asyncKeydown {};
-			class initInputEH { postInit = 1; };
-			class onKeyDown {};
+		class Inventory {
+			file = "core\Inventory";
+			class addItem {};
+			class createInventory {};
+			class deleteInventory {};
+			class duplicateInventory {};
+			class initializeInventory {};
+			class removeItem {};
+			class setInventory {};
+			class transferInventory {};
 		};
 
 		class Music
@@ -66,6 +91,22 @@ class CfgFunctions
 			class playRandom {};
 			class playSong {};
 			class stopMusic {};
+		};
+
+		class Sound {
+			file = "core\Sound";
+			class say3DNetworked {};
+		};
+
+		class System {
+			file = "core\System";
+			class requestDBData {};
+			class recieveDBData {};
+			class loadProfileNamespaceData {};
+			class saveProfileNamespaceData {};
+			class getProfileValue {};
+			class setProfileValue {};
+			class recieveKVArrayData {};
 		};
 
 		class UIFunctions {
@@ -105,17 +146,15 @@ class CfgFunctions
 			file = "core\Cinematic\Util";
 			
 			class cameraCalculateTarget {};
-			class conditionalBlur {};
-			class circunstancialBlur {};
-			class circunstancialMonochrome {};
 			class createDeadCamera {};
 			class createFixedCamera {};
+			class circunstancialBlur {};
+			class circunstancialMonochrome {};
 			class deleteDeadCamera {};
 			class deleteFixedCamera {};
-			class endBlur {};
 			class findFixedCamera {};
-			class killAllCircunstancialBlurs {};
-			class startBLur {};
+			class startCinematic {};
+			class stopCinematic {};
 			class updateFixedCamera {};
 		};
 	};
