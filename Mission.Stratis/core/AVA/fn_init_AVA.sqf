@@ -1,3 +1,11 @@
+/*
+	File: fn_init_AVA.sqf
+	Author: Akryllax
+	Description: Local AVA init. Intended to be called once.
+ */
+
+if(isServer) exitWith {};
+
 AVAEventQueue = [];
 AVA_lastEvent = time;
 //missionConfigFile >> "CfgAva"
@@ -9,4 +17,6 @@ AVA_lastEvent = time;
 	inAvaRange = true;
 	//hint "AVA systems online";
 	[] call PL_fnc_startAVASystems;
+	[] call PL_fnc_clearNotificationStack;
+	[] spawn PL_fnc_startEventQueue;
 };

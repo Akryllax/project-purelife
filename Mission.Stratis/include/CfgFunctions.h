@@ -100,6 +100,8 @@ class CfgFunctions
 
 		class System {
 			file = "core\System";
+			class arrayInsertInto {};
+			class await {};
 			class requestDBData {};
 			class recieveDBData {};
 			class loadProfileNamespaceData {};

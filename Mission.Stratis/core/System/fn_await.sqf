@@ -1,3 +1,10 @@
+/*
+	File: fn_await.sqf
+	Author: Akryllax
+	Description: Calls a given function or code and awaits a response. Has an
+	optional timeout option for avoiding infinite network waiting.
+*/
+
 _flag = param[0, "",[""]];
 _callback = param[1, {}, [{}, ""]];
 _scheduled = param [2, false, [false]];
@@ -8,6 +15,8 @@ if(count _flag == 0) exitwith {
 	false;
 };
 
+missionNamespace setVariable[_flag, nil];
+
 if(!canSuspend) exitWith {
 	["Called await from unscheduled stack"] call BIS_fnc_error;
 	false
@@ -16,7 +25,7 @@ if(!canSuspend) exitWith {
 _oldFlag = missionnamespace getVariable[_flag, false];
 _timestamp = time;
 waituntil {
-	!(missionnamespace getVariable[_flag, false] isEqualTo _oldFlag) ||
+	!((missionnamespace getVariable[_flag, false]) isEqualTo _oldFlag) ||
 	(_timestamp + _timeout < time)
 };
 
@@ -43,3 +52,5 @@ switch (typeName _callback) do {
 	};
 	default {};
 };
+
+true
