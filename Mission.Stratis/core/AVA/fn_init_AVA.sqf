@@ -4,7 +4,7 @@
 	Description: Local AVA init. Intended to be called once.
  */
 
-if(isServer) exitWith {};
+if(isDedicated) exitWith {};
 
 AVAEventQueue = [];
 AVA_lastEvent = time;
@@ -18,5 +18,5 @@ AVA_lastEvent = time;
 	//hint "AVA systems online";
 	[] call PL_fnc_startAVASystems;
 	[] call PL_fnc_clearNotificationStack;
-	[] spawn PL_fnc_startEventQueue;
+	[] spawn PL_fnc_startAVAEventQueue;
 };

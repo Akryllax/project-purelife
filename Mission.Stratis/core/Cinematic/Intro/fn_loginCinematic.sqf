@@ -14,12 +14,14 @@
 
 #include "CAMERA_SPOTS.inc"
 
-[] spawn PL_fnc_playRandom;
+//[] spawn PL_fnc_playRandom;
+[3] spawn PL_fnc_playSong;
 
 0 fadeSound 0.4;
 _camIndex = 0;
 introCamera = (_camPoints select _camIndex) call PL_fnc_createFixedCamera;
 inIntro = true;
+inLogin = false;
 
 PP_login = ppEffectCreate ["DynamicBlur",499];
 

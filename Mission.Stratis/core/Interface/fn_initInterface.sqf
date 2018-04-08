@@ -59,7 +59,7 @@ triggerAVAHeavyVehicleDamage = false;
 
 				_playerHUDPos = avaHUDBaseVector vectorAdd (_vectorSide vectorMultiply 0.3);
 				_playerHUDPos = playerEyePos vectorAdd (_playerHUDPos);
-				drawIcon3D [MISSION_ROOT + "ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 5, "", 0, 0.025, "TahomaB"];
+				drawIcon3D [MISSION_ROOT + "resources\hud\ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 5, "", 0, 0.025, "TahomaB"];
 			};
 		};
 		case "EXTERNAL":
@@ -82,7 +82,7 @@ triggerAVAHeavyVehicleDamage = false;
 
 			_playerHUDPos = (playerEyePos vectorAdd(_eyeDir vectorAdd (_vectorSide vectorMultiply 0.7)));
 			_playerHUDPos = avaHUDBaseVector vectorAdd (_playerHUDPos);
-			drawIcon3D [MISSION_ROOT + "ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 0, "", 0, 0.025, "TahomaB"];
+			drawIcon3D [MISSION_ROOT + "resources\hud\ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 0, "", 0, 0.025, "TahomaB"];
 		};
 
 		case "GUNNER": 
@@ -111,7 +111,7 @@ triggerAVAHeavyVehicleDamage = false;
 
 				_playerHUDPos = avaHUDBaseVector vectorAdd (_vectorSide vectorMultiply 0.6);
 				_playerHUDPos = playerEyePos vectorAdd (_playerHUDPos);
-				drawIcon3D [MISSION_ROOT + "ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 3, "", 0, 0.025, "TahomaB"];
+				drawIcon3D [MISSION_ROOT + "resources\hud\ui_concept_basic.paa", [1,1,1,1], _playerHUDPos, 15, 15, 3, "", 0, 0.025, "TahomaB"];
 			};
 		};
 		default

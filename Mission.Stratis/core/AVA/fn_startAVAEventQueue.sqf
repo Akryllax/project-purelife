@@ -29,7 +29,6 @@ while {true} do {
 		
 		default {
 			[format["Error: Unkown AVA Event class type. Params: '%1'", _event]] call BIS_fnc_error;
-			false
 		};
 	};
 

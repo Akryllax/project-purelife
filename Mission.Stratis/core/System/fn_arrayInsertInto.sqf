@@ -8,11 +8,12 @@ _array = param [0, [], []];
 _element = _this select 1;
 _index = param [2, -1,[]];
 
-if(count _array == 0) exitWith {
-	[];
-};
 if(_index < 0) exitWith {
 	_array;
+};
+
+if(count _array == 0) exitWith {
+	[_element];
 };
 
 _result = [];

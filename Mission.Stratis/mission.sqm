@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1860.3644,28.846504,5853.9609};
-		dir[]={-0.25142249,-0.41233149,-0.8756575};
-		up[]={-0.11380094,0.91103089,-0.3963176};
-		aside[]={-0.96116608,-7.698065e-006,0.2759777};
+		pos[]={1853.7983,15.890944,5882.332};
+		dir[]={0.036514267,-0.35588676,-0.93386495};
+		up[]={0.013905948,0.93451786,-0.3556273};
+		aside[]={-0.99928743,-8.5905413e-007,-0.039070874};
 	};
 };
 binarizationWanted=0;
@@ -61,6 +61,7 @@ randomSeed=7750507;
 class ScenarioData
 {
 	author="Akryllax";
+	onLoadMission="Coming soon.";
 	briefing=0;
 	debriefing=0;
 	showHUD=0;
@@ -79,7 +80,34 @@ class ScenarioData
 	wreckRemovalMinTime=1800;
 	wreckRemovalMaxTime=3600;
 	corpseManagerMode=1;
+	corpseRemovalMaxTime=1222;
 	minPlayerDistance=100;
+};
+class CustomAttributes
+{
+	class Category0
+	{
+		name="Multiplayer";
+		class Attribute0
+		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		nAttributes=1;
+	};
 };
 class Mission
 {
@@ -88,20 +116,25 @@ class Mission
 		briefingName="PURELIFE: Revival";
 		resistanceEast=1;
 		timeOfChanges=1800.0002;
-		startWeather=0.30000001;
-		startWind=0.1;
+		startWeather=0;
+		startWind=0.30091506;
+		startWindDir=5;
 		startWaves=0.1;
-		forecastWeather=0.30000001;
-		forecastWind=0.1;
+		forecastWeather=0.25008479;
+		forecastWind=0.5;
 		forecastWaves=0.1;
 		forecastLightnings=0.1;
+		forecastWindDir=5;
+		windForced=1;
 		year=2035;
 		month=6;
 		day=24;
-		hour=12;
-		minute=0;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
+		hour=5;
+		minute=-5;
+		startFogBase=-1000;
+		forecastFogBase=-1000;
+		startFogDecay=0;
+		forecastFogDecay=0;
 	};
 	class Entities
 	{

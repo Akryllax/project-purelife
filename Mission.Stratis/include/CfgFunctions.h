@@ -15,11 +15,16 @@ class CfgFunctions
 
 		class AVA {
 			file="core\AVA";
-			class init_AVA {
-				postInit = 1;
-			};
-			class startAVASystems {};
 			class AVASay {};
+			class AVATowerTracker {};
+			class clearNotificationStack {};
+			class createNotificationStack {};
+			class init_AVA {};
+			class pauseAVAEventQueue {};
+			class playEvent {};
+			class startAVAEventQueue {};
+			class startAVASystems {};
+			class stopAVASystems {};
 		};
 
 		class Avatars {
@@ -102,7 +107,9 @@ class CfgFunctions
 			file = "core\System";
 			class arrayInsertInto {};
 			class await {};
+			class initializeCommonVariables {};
 			class requestDBData {};
+			class requestServerSync {};
 			class recieveDBData {};
 			class loadProfileNamespaceData {};
 			class saveProfileNamespaceData {};
