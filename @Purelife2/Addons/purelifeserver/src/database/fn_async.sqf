@@ -47,6 +47,8 @@ while{_loop} do
 
 _queryResult = call compile _queryResult;
 
+diag_log format["Querry result: %1", _queryResult];
+
 // Not needed, its SQF Code incase extDB3 ever returns error message i.e Database Connection Died
 if ((_queryResult select 0) isEqualTo 0) exitWith {diag_log format ["extDB3: Protocol Error: %1", _queryResult]; []};
 private _return = (_queryResult select 1);

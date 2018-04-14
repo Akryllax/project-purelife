@@ -17,21 +17,27 @@ while {true} do {
 	//[_eventClassname, _eventValues, _priority];
 	_event = AVA_eventQueue deleteAt 0;
 	_eventClass = missionConfigFile >> "CfgAVA" >> "Events" >> (_event select 0);
+	_eventDuration = 0;
 
-	switch (getText [_eventClass, "type"]) do {
-		case "notification": {
+	if(!(typeName _eventClass isEqualTo typeName (missionConfigFile >> "CfgAVA" >> "Events"))) then {
+		[format["Error: Unkown AVA Event class type. Params: '%1'", _event]] call BIS_fnc_error;
+	} else {
+		_eventDuration = (_eventClass getNumber "duration"); 
+		switch (getText [_eventClass, "type"]) do {
+			case "notification": {
 
-		};
+			};
 
-		case "ava_gui_notification": {
+			case "ava_gui_notification": {
 
-		};
-		
-		default {
-			[format["Error: Unkown AVA Event class type. Params: '%1'", _event]] call BIS_fnc_error;
+			};
+			
+			default {
+				[format["Error: Unkown AVA Event class type. Params: '%1'", _event]] call BIS_fnc_error;
+			};
 		};
 	};
 
-	sleep (_eventClass getNumber "duration");
+	sleep _eventDuration;
 	sleep 0.2;
 };

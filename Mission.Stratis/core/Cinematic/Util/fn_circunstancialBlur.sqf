@@ -1,5 +1,21 @@
 /*
- * 
+ * File: fn_circunstancialBlur.sqf
+ * Author: Akryllax
+ * Description: Add a custom EH-esque code for a boolean variable. If true, puts blur, if false, removes blur.
+ * Usefull for when opening and closing dialogs and blurring background.
+ *
+ * Params:
+ *   - 0 (STRING):		Name of the variable to track.
+ *	 - 1 (NUMBER): 		Transition time.
+ *	 - 2 (BOOL (opt)):	Stop tracking after first cycle. Default to 'false'.
+ * Example:
+ *
+ *	["variableName", 0.5, false] call PL_fnc_circunstancialBlur;
+ *
+ *	variableName = true; //Shows blur.
+ *
+ *  variableName = false; //Hides blur.
+ *
  */
 
 #define BLUR_AMOUT 9

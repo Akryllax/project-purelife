@@ -19,6 +19,9 @@ _outStr = parseText format["%1", player ammo (currentWeapon player)];
 88 cutRsc ["AmmoBadge","PLAIN"];
 ((uiNamespace getVariable "AmmoBadge") displayCtrl 15001) ctrlSetText (str _outStr);
 
+//Initialized Player Menu variable.
+isPlayerMenuShowing = false;
+
 //Low ammo overlay
 hasLowAmmo = false;
 weaponChanged = false;

@@ -75,6 +75,7 @@ class CfgFunctions
 			class releaseUISpace {};
 			class removeOverlay {};
 			class reserveUISpace {};
+			class togglePlayerMenu {};
 			class resetInterface {};
 		};
 

@@ -22,7 +22,7 @@ _target = cursorTarget;
 _overrideKeys = 
 [
 	DIK_F1, DIK_F2, DIK_F3,DIK_F4,DIK_F5,DIK_F6,DIK_F7,DIK_F8,DIK_F9,DIK_F10,DIK_F11,DIK_F12,
-	DIK_GRAVE
+	DIK_GRAVE, DIK_TAB
 ];
 
 if(_dikCode in _overrideKeys) then {

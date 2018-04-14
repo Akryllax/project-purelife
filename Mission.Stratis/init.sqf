@@ -24,8 +24,11 @@ waitUntil{time > 0};
 
 //[] spawn PL_fnc_loginCinematic;
 [player] call PL_fnc_addEntityEH;
+["showBlur",0.2] call PL_fnc_circunstancialBlur;
 
 player enableStamina false;
+
+waituntil {!isNil "serverReady"};
 
 [] spawn {
 	waitUntil {!inIntro};

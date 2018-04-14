@@ -40,6 +40,10 @@ switch (_dikCode) do {
 		1 call BIS_fnc_recompile;	
 	};
 
+	case DIK_TAB: {
+		[] call PL_fnc_togglePlayerMenu;
+	};
+
 	//Unregistered keys are just ignored	
 	default {
 	
